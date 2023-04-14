@@ -1176,7 +1176,7 @@ def _handle_training(
     if use_tqdm is not None:
         training_kwargs["use_tqdm"] = use_tqdm
     training_kwargs.setdefault("num_epochs", 5)
-    training_kwargs.setdefault("batch_size", 256)
+    # training_kwargs.setdefault("batch_size", 256)
     _result_tracker.log_params(params=training_kwargs)
 
     # Add logging for debugging
